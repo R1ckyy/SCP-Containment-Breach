@@ -1,157 +1,221 @@
 <!DOCTYPE html>
 <html lang="cs">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
-<head>
-  <title>SCP Containment Breach</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
+  <head>
+    <title>SCP Containment Breach</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-sm bg-custom1 navbar-dark">
-      <a class="navbar-brand" href="#">
-        <img src="./images/navbar_logo.png" alt="SCP Logo" height="50" />
-        Menu
-      </a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-custom1 navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="./images/navbar_logo.png" alt="SCP Logo" height="50" />
+        </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link5</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="audio1()">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="audio1()">Link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="audio1()">Link3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="audio1()">Link4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="audio1()">Link5</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <img
+        src="./images/header.png"
+        class="img-fluid mx-auto d-block w-60 m-3"
+        alt="Logo SCP:CB"
+      />
+      <div class="m-5"></div>
+      <p class="text-white text-center p-2 border-top lead">
+        SCP - Containment Breach je Free-to-play indie hororová hra o přežití,
+        která je stavěna na příbězích z SCP Foundation Wiki.
+      </p>
+      <p class="text-white text-center p-2 border-bottom lead">
+        Ve hře následujeme příběh D-9341, testovacího subjektu, který je držený
+        v zařízení obsahující různé anomálie známé jako SCP. Když v tomto
+        zařízení dojde k úniku těchto SCP, stane se vaším úkolem se dostat z
+        tohoto podzemního komplexu a utéct.
+      </p>
+      <div class="m-5"></div>
+      <div id="accordion">
+        <div class="card bg-custom1">
+          <div class="card-header">
+            <a
+              class="card-link"
+              data-toggle="collapse"
+              onclick="audio2()"
+              href="#collapseOne"
+            >
+              O SCP Nadaci
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Tato nadace je pověřena vládami po celém světě, aby
+              <strong
+                >zajišťovala anomální jednotlivce, entity, lokace, objekty a
+                jevy působící mimo hranice zákonů přírody</strong
+              >. Pokud by tyto objekty nebyly zadrženy, mohly by představovat
+              přímé ohrožení lidského života a vnímání reality a normality.
+            </div>
+            <div class="card-body">
+              <strong>Existence SCP Nadace je veřejnosti utajena</strong>, aby
+              se zabránilo hromadné panice a umožnilo normální fungování lidské
+              civilizace. Když je objevena anomálie, Nadace SCP nasadí agenty,
+              aby ji zajistili a přepravili do nadačního zařízení, nebo aby ji
+              zadrželi v místě objevu, pokud není přesun možný. Jakmile je SCP
+              zajištěno, je vědci Nadace zkoumáno. Pro testování potencionálně
+              nebezpečných SCP se kvůli jejich postradatelnosti používají
+              <strong
+                >testovací subjekty naverbované nadací (označovány jako personál
+                Třídy D)</strong
+              >.
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-custom1">
+          <div class="card-header">
+            <a
+              class="collapsed card-link"
+              data-toggle="collapse"
+              onclick="audio2()"
+              href="#collapseTwo"
+            >
+              Základy o hře
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Váš hlavní cíl v celé hře je
+              <strong>utéct ze zařízení Nadace živý</strong>, zatímco se
+              vyhýbáte jakémukoli nebezpečí na cestě. Největší problém jsou SCP,
+              které utekly ze svých cel. Hra se točí kolem hráče, který se
+              pohybuje po náhodně generovaných místnostech, které jsou rozděleny
+              do tří zón: Light Containment Zone, Heavy Containment Zone a
+              Entrance Zone. Na svojí cestě může hráč narazit na předměty, které
+              mu musí nebo nemusí pomoct utéct. Mezi ně patří třeba
+              <strong
+                >Plynová maska, která chrání oči hráče proti dekontaminačnímu
+                plynu, přístupové karty schopné otevřít zamčené dveře</strong
+              >
+              a mnoho dalších
+            </div>
+            <div class="card-body">
+              <strong>SCP jsou entity s anomálními schopnostmi</strong>, které
+              hráč potká několikrát na své cestě. Hlavní záporák je SCP-173,
+              Betonová socha schopná se hýbat vysokou rychlostí
+              <strong>když není pozorována</strong>, a zlomí páteř komukoli kdo
+              je poblíž. Hráč proto musí nepřetržitě mít oční kontakt s touto
+              sochou aby zajistil svoje přežití. Avšak to by bylo moc jednoduché
+              bez mrkajícího mechanismu, který donutí hráče mrknout za určitou
+              dobu.
+            </div>
+            <div class="card-body">
+              Hráč se také musí vyhýbat
+              <strong>Nine-Tailed-Fox, elitní jednotce o 9 členech</strong>
+              vyslanou Nadací aby zadržela jakékoli uprchlé anomálie. Tato
+              jednotka má ale taky za úkol zastřelit každý personál třidy D
+              (hráče).
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-custom1">
+          <div class="card-header">
+            <a
+              class="collapsed card-link"
+              data-toggle="collapse"
+              onclick="audio2()"
+              href="#collapseThree"
+            >
+              O postavě hráče
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              V této hře hrajeme za D-9341, personál třídy D naverbován Nadací.
+              Personál třídy D je používán na testování, nebo interakci s
+              nebezpečnými SCP. Nadace jich má docela hodně takže nevadí, když
+              někdo jen tak umře.
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  <main class="container">
-    <img src="./images/header.png" class="img-fluid mx-auto d-block w-60 m-3" alt="Logo SCP:CB" />
-    <div class="m-5"></div>
-    <p class="text-white text-center p-2 border-top">
-      SCP - Containment Breach je Free-to-play indie hororová hra o přežití,
-      která je stavěna na příbězích z SCP Foundation Wiki.
-    </p>
-    <p class="text-white text-center p-2 border-bottom">
-      Ve hře následujeme příběh D-9341, testovacího subjektu, který je držený
-      v zařízení obsahující různé anomálie známé jako SCP. Když v tomto
-      zařízení dojde k úniku těchto SCP, stane se vaším úkolem se dostat z
-      tohoto podzemního komplexu a utéct.
-    </p>
-    <div class="m-5"></div>
-    <div id="accordion">
-      <div class="card bg-custom1">
-        <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            O SCP Nadaci
-          </a>
-        </div>
-        <div id="collapseOne" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Tato nadace je pověřena vládami po celém světě, aby
-            <strong>zajišťovala anomální jednotlivce, entity, lokace, objekty a
-              jevy působící mimo hranice zákonů přírody</strong>. Pokud by tyto objekty nebyly zadrženy, mohly by
-            představovat
-            přímé ohrožení lidského života a vnímání reality a normality.
-          </div>
-          <div class="card-body">
-            <strong>Existence SCP Nadace je veřejnosti utajena</strong>, aby
-            se zabránilo hromadné panice a umožnilo normální fungování lidské
-            civilizace. Když je objevena anomálie, Nadace SCP nasadí agenty,
-            aby ji zajistili a přepravili do nadačního zařízení, nebo aby ji
-            zadrželi v místě objevu, pokud není přesun možný. Jakmile je SCP
-            zajištěno, je vědci Nadace zkoumáno. Pro testování potencionálně
-            nebezpečných SCP se kvůli jejich postradatelnosti používají
-            <strong>testovací subjekty naverbované nadací (označovány jako personál
-              Třídy D)</strong>.
-          </div>
-        </div>
-      </div>
-
-      <div class="card bg-custom1">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            Základy o hře
-          </a>
-        </div>
-        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Váš hlavní cíl v celé hře je
-            <strong>utéct ze zařízení Nadace živý</strong>, zatímco se
-            vyhýbáte jakémukoli nebezpečí na cestě. Největší problém jsou SCP,
-            které utekly ze svých cel. Hra se točí kolem hráče, který se
-            pohybuje po náhodně generovaných místnostech, které jsou rozděleny
-            do tří zón: Light Containment Zone, Heavy Containment Zone a
-            Entrance Zone. Na svojí cestě může hráč narazit na předměty, které
-            mu musí nebo nemusí pomoct utéct. Mezi ně patří třeba
-            <strong>Plynová maska, která chrání oči hráče proti dekontaminačnímu
-              plynu, přístupové karty schopné otevřít zamčené dveře</strong>
-            a mnoho dalších
-          </div>
-          <div class="card-body">
-            <strong>SCP jsou entity s anomálními schopnostmi</strong>, které
-            hráč potká několikrát na své cestě. Hlavní záporák je SCP-173,
-            Betonová socha schopná se hýbat vysokou rychlostí
-            <strong>když není pozorována</strong>, a zlomí páteř komukoli kdo
-            je poblíž. Hráč proto musí nepřetržitě mít oční kontakt s touto
-            sochou aby zajistil svoje přežití. Avšak to by bylo moc jednoduché
-            bez mrkajícího mechanismu, který donutí hráče mrknout za určitou
-            dobu.
-          </div>
-          <div class="card-body">
-            Hráč se také musí vyhýbat
-            <strong>Nine-Tailed-Fox, elitní jednotce o 9 členech</strong>
-            vyslanou Nadací aby zadržela jakékoli uprchlé anomálie. Tato
-            jednotka má ale taky za úkol zastřelit každý personál třidy D
-            (hráče).
-          </div>
-        </div>
-      </div>
-
-      <div class="card bg-custom1">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            O postavě hráče
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-          <div class="card-body">Lorem ipsum..</div>
-        </div>
-      </div>
-    </div>
-    <p class="text-white text-center pt-5">SCP:CB Trailer</p>
-    <video class="mx-auto d-block m-1" width="720" height="400" controls>
-      <source src="./video_audio/SCPCB_Trailer.mp4" type="video/mp4">
-    Váš prohlížeč nepodporuje toto video.
-    </video>
-  </main>
-  <footer></footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+      <p class="text-white text-center pt-5">SCP:CB Trailer</p>
+      <video class="mx-auto d-block m-1" width="720" height="400" controls>
+        <source src="./video_audio/SCPCB_Trailer.mp4" type="video/mp4" />
+        Váš prohlížeč nepodporuje toto video.
+      </video>
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function audio1() {
+      var zvuk = new Audio("./video_audio/buttondenied.ogg");
+      zvuk.play();
+    }
+    function audio2() {
+      var zvuk = new Audio("./video_audio/buttongranted.ogg");
+      zvuk.play();
+    }
+    function delay(URL) {
+      setTimeout(function () {
+        window.location = URL;
+      }, 700);
+    }
+  </script>
 </html>

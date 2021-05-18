@@ -23,9 +23,6 @@ video {
 .card-body{
     color: white;
 }
-p {
-    font-size: 20px
-}
 .center{
     display: flex;
     justify-content: center;
