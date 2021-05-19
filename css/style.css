@@ -38,10 +38,10 @@ video {
     margin-top: 10px;
 }
 .footerodkazy{
-    color: rgb(0, 202, 202);
+    color: rgb(0, 202, 202)!important;
 }
 .footerodkazy:hover{
-    color: aqua;
+    color: aqua!important;
 }
 /* Dočásné */
 
