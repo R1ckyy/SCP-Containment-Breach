@@ -37,6 +37,12 @@ video {
 .footerimage{
     margin-top: 10px;
 }
+.footerodkazy{
+    color: rgb(0, 202, 202);
+}
+.footerodkazy:hover{
+    color: aqua;
+}
 /* Dočásné */
 
 .docasne1:active{
