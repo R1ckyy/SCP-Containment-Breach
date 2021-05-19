@@ -37,10 +37,10 @@ video {
 .footerimage{
     margin-top: 10px;
 }
-.footerodkazy{
+a.footerodkazy{
     color: rgb(0, 202, 202)!important;
 }
-.footerodkazy:hover{
+a.footerodkazy:hover{
     color: aqua!important;
 }
 /* Dočásné */
