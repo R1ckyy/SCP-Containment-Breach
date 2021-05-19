@@ -12,6 +12,9 @@ video {
 .bg-custom1 {
     background-color: #141414;
 }
+.text-custom1{
+    color:aqua!important;
+}
 .card-link {
     color: rgb(0, 202, 202);
     padding-left: 30px;
@@ -26,4 +29,17 @@ video {
 .center{
     display: flex;
     justify-content: center;
+}
+.odkazy{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footerimage{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+/* Dočásné */
+
+.docasne1:active{
+    color: red!important;
 }
