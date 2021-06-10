@@ -17,7 +17,8 @@
       integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
       crossorigin="anonymous"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="local.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   </head>
 
@@ -40,19 +41,19 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-custom1 docasne1" href="#" onclick="audio1()">SCP:CB</a>
+              <a class="nav-link text-custom1 docasne1" href="#" >SCP:CB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link docasne1" href="#" onclick="audio1()">O Nadaci</a>
+              <a class="nav-link docasne1" href="./Nadace/O_Nadaci.html" >O Nadaci</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link docasne1" href="#" onclick="audio1()">Mechaniky hry</a>
+              <a class="nav-link docasne1" href="#" >Mechaniky hry</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link docasne1" href="#" onclick="audio1()">Zóny</a>
+              <a class="nav-link docasne1" href="#" >Zóny</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link docasne1" href="#" onclick="audio1()">Příběh</a>
+              <a class="nav-link docasne1" href="#" >Příběh</a>
             </li>
           </ul>
         </div>
@@ -82,7 +83,6 @@
             <a
               class="card-link"
               data-toggle="collapse"
-              onclick="audio2()"
               href="#collapseOne"
             >
               O SCP Nadaci
@@ -118,7 +118,6 @@
             <a
               class="collapsed card-link"
               data-toggle="collapse"
-              onclick="audio2()"
               href="#collapseTwo"
             >
               Základy o hře
@@ -165,7 +164,6 @@
             <a
               class="collapsed card-link"
               data-toggle="collapse"
-              onclick="audio2()"
               href="#collapseThree"
             >
               O postavě hráče
@@ -210,6 +208,12 @@
             class="footerodkazy"
             ><i class="fa fa-download fa-3x" aria-hidden="true"></i
           ></a>
+          <a
+            href="https://www.moddb.com/mods/scp-containment-breach-ultimate-edition/downloads/scp-containment-breach-ultimate-edition-v5-5-4-1-installer"
+            target="_blank"
+            class="footerodkazy"
+            ><i class="fa fa-download fa-3x" aria-hidden="true"></i
+          ></a>
         </div>
       </div>
     </footer>
@@ -229,14 +233,6 @@
     crossorigin="anonymous"
   ></script>
   <script>
-    function audio1() {
-      var zvuk = new Audio("./video_audio/buttondenied.ogg");
-      zvuk.play();
-    }
-    function audio2() {
-      var zvuk = new Audio("./video_audio/buttongranted.ogg");
-      zvuk.play();
-    }
     function delay(URL) {
       setTimeout(function () {
         window.location = URL;
