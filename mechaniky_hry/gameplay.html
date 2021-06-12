@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <title>Gameplay</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+  <link href="../css/global.css" rel="stylesheet" />
+  <link href="local.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-custom1 navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../images/navbar_logo.png" alt="SCP Logo" height="50" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link docasne1" href="../index.html">SCP:CB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link docasne1" href="../nadace/o_nadaci.html">O Nadaci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custom1 docasne1" href="#">Mechaniky hry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link docasne1" href="#">Místnosti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link docasne1" href="#">Příběh</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="m-5 text-center text-white">Mechaniky Hry</h1>
+    <div class="m-5"></div>
+    <p class="text-white text-center p-2 lead">
+      Vaším hlavním cílem je utéct z nadačního komplexu a vyhnout se
+      nebezpečím na vaší cestě
+    </p>
+    <div class="m-5"></div>
+  <h2 class="text-white p-3">Mrkání</h2>  
+  <div class="row">
+    <div class="col-md-8">
+    <p class="text-white p-1">Hlavní mechanikou hry je <a class="link"
+        href="https://www.lentiamo.cz/mrkani-proc-je-dulezite.html" target="_blank">mrkání</a>. Mrkání je měřeno "blink
+      barem" na HUDU. Když se vyprázdní donutí hráče mrknout, toto způsobí zbarvení vize hráče do černa na krátky
+      moment. Na tohle je důležité myslet když se setkáte s SCP-173. Hráč může manuálně mrknout pomocí Spacebaru.</p>
+    <p class="text-white p-1">Dekontaminační plyn se nachází všude možně po celou dobu hry, a způsobuje rychlejší
+      mrkání, tyto efekty ale zmizí pokud si hráč nasadí plynovou masku.</p>
+    </div>
+    <div class="col-md-4 border bg-black">
+              <img class="gif img-fluid" src="../images/173_afterbreach.png" alt="Příklad mrkání">
+      <p class="text-white">Příklad mrkání</p>
+    </div>
+    </div>
+    <h2 class="text-white p-3">Sprint</h2>
+    <p class="text-white p-1">Sprintování je další jednoduchá mechanika měřena "stamina barem" na HUDU který je používán
+      na napodobení vyčerpání. Když hráč při chůzi drží tlačítko Shift běhá velmi rychle a <strong>je doporučeno toto použít
+      pouze při utíkání před MTF jednotkami nebo SCP</strong>. Pokud si hráč nasadí super Gas mask (Maska vylepšená v jednom SCP)
+      může běhat jak dlouho chce.</p>
+    <h2 class="text-white p-3">Krčení</h2>
+    <p class="text-white p-1">Krčení je herní mechanika přidána ve verzi 0.6. Hráč se může přikrčit pomocí klávesy Ctrl.
+    </p>
+    <p class="text-white p-1">Hráč uvidí o trochu níž a bude se pohybovat pomaleji. Tato mechanika se používá k
+      schovávání před MTF jednotkama a k proplížení kolem SCP-939</p>
+    <h2 class="text-white p-3">Inventář</h2>
+    <div class="row">
+      <div class="col-md-8">
+    <p class="text-white p-1">Zmáčknutím klávesy Tab si hráč může otevřít inventář.</p>
+    <p class="text-white p-1">Tady má přístup ke všem předmětům, které nasbíral. <strong>Celkových míst v inventáři je 10</strong>. Pokud
+      hráč klikne, podrží a přetáhne předmět mimo box, naše postava "upustí" daný předmět na zem a tak udělat místo pro
+      další předměty které potřebuje. <strong>Baterie můžou být přetaženy do S-nav nebo do brýlí s nočním viděním</strong> aby se jim
+      dodala energie kterou potřebujou aby předměty fungovaly. Dokumenty a přístupové karty můžou být vloženy do
+      schránky.</p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-fluid" src="../images/inventory.png" alt="Inventář">
+    </div>
+      </div>
+    <h2 class="text-white p-3">Zranění</h2>
+    <p class="text-white p-1">Když hráč potká nepřítele který ho nezabije na jednu ránu, začnou krvácet. Toto se časem
+      zhorší, hráč bude víc kulhat, bude rozmazaně vidět. Pokud je zranění velké hráč bude donucen se skrčit. <strong>Pokud bude
+      krvácet moc dlouho zemře</strong>.</p>
+    <p class="text-white p-1">Hráč proto může použít SCP-500, lékarničku nebo SCP-420-J aby si ošetřil rány a uzdravil
+      se</p>
+    <h2 class="text-white p-3">HUD</h2>
+    <div class="row">
+      <div class="col-md-8">
+          <p class="text-white p-1">"Heads-Up Display" ukazuje kolik má hráč staminy, a kdy bude mrkat pomocí ukazatelů v levé
+      dolní části obrazovky.</p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-fluid" src="../images/hud.png" alt="HUD">
+    </div>
+    </div>
+    <h2 class="text-white p-3">Obtížnosti</h2>
+    <p class="text-white p-1">Při vytváření nové hry má hráč možnost si vybrat mezi čtyřmi obtížnostmi.</p>
+    <h3 class="safe p-2">Safe</h3>
+    <ul class="text-white">
+      <li>Uložení hry kdekoli</li>
+    </ul>
+    <h3 class="euclid p-2">Euclid</h3>
+    <ul class="text-white">
+      <li>Uložení hry <strong>pouze u interaktivních monitorů</strong></li>
+      <li>Rychlost SCP-173, SCP-106, SCP-049, SCP-096, SCP-939 a MTF se <strong>zvýší o 10%</strong></li>
+    </ul>
+    <h3 class="keter p-2">Keter</h3>
+    <ul class="text-white">
+      <li>Uložení <strong>pouze při vypínání hry</strong> (Save & Quit)</li>
+      <li>Rychlost SCP-173, SCP-106, SCP-049, SCP-096, SCP-939 a MTF se <strong>zvýší o 20%</strong></li>
+      <li>Větší šance naražení na SCP-173, SCP-106, SCP-049 a SCP-096</li>
+    </ul>
+  </main>
+  <footer class="container-fluid bg-custom1 p-3 mt-5">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-12 p-2 text-center">
+        <i class="fa fa-code fa-3x text-white" aria-hidden="true"></i>
+        <p class="text-white">© Erik Graf - IT1 2021</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 p-2 border-left border-right">
+        <img src="../images/footer.png" alt="SCP Logo" height="75" class="mx-auto d-block footerimage" />
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 p-2 text-center odkazy">
+        <a href="https://youtu.be/HYXzA_UQpp0" target="_blank" class="footerodkazy"><i
+            class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i></a><a href="http://www.scpwiki.com/"
+          target="_blank" class="footerodkazy"><i class="fa fa-globe fa-3x pr-3" aria-hidden="true"></i></a><a
+          href="https://mega.nz/#!iBAEASJQ!xqlltGoeI3yEM_X7itQga_fxZaff_nSyGq_z2JfGlqY" target="_blank"
+          class="footerodkazy"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.moddb.com/mods/scp-containment-breach-ultimate-edition/downloads/scp-containment-breach-ultimate-edition-v5-5-4-1-installer"
+          target="_blank" class="footerodkazy"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    function delay(URL) {
+      setTimeout(function () {
+        window.location = URL;
+      }, 700);
+    }
+  </script>
+</body>
+
+</html>

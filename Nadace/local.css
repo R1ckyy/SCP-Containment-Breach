@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/background2.png")!important;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background2.png")!important;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -10,4 +10,31 @@ a.link{
 }
 a.link:hover{
     color: aqua!important;
+}
+.level1{
+    color: rgb(255, 253, 117)
+}
+.level2{
+    color: rgb(255, 251, 0)
+}
+.level3{
+    color: rgb(255, 208, 0)
+}
+.level4{
+    color: rgb(255, 145, 0)
+}
+.level5{
+    color: rgb(255, 0, 0)
+}
+.safe{
+    color: rgb(9, 255, 0)
+}
+.euclid{
+    color: rgb(255, 251, 0)
+}
+.keter{
+    color: rgb(255, 0, 0)
+}
+.thaumiel{
+    color: rgb(153, 153, 153)
 }
