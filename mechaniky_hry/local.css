@@ -26,6 +26,9 @@ a.link:hover{
 .bg-black{
     background-color: black;
 }
+.difficulty{
+    vertical-align: middle !important;
+}
 
 @keyframes blinking{
     0%{

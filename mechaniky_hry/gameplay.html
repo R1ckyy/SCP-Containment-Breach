@@ -2,7 +2,7 @@
 <html lang="cs">
 
 <head>
-  <title>Gameplay</title>
+  <title>Mechaniky Hry</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -38,7 +38,7 @@
             <a class="nav-link text-custom1 docasne1" href="#">Mechaniky hry</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link docasne1" href="#">Místnosti</a>
+            <a class="nav-link docasne1" href="../mapa/mistnosti.html">Místnosti</a>
           </li>
           <li class="nav-item">
             <a class="nav-link docasne1" href="#">Příběh</a>
@@ -111,22 +111,30 @@
     </div>
     </div>
     <h2 class="text-white p-3">Obtížnosti</h2>
-    <p class="text-white p-1">Při vytváření nové hry má hráč možnost si vybrat mezi čtyřmi obtížnostmi.</p>
-    <h3 class="safe p-2">Safe</h3>
+    <div class="row">
+      <div class="col-md-8">
+                  <p class="text-white p-1">Při vytváření nové hry má hráč možnost si vybrat mezi čtyřmi obtížnostmi. Nebo si může sestavit obtížnost pomocí tlačítka Custom</p>
+    <h3 class="safe p-2">Safe (Easy)</h3>
     <ul class="text-white">
       <li>Uložení hry kdekoli</li>
     </ul>
-    <h3 class="euclid p-2">Euclid</h3>
+    <h3 class="euclid p-2">Euclid (Normal)
+    </h3>
     <ul class="text-white">
       <li>Uložení hry <strong>pouze u interaktivních monitorů</strong></li>
       <li>Rychlost SCP-173, SCP-106, SCP-049, SCP-096, SCP-939 a MTF se <strong>zvýší o 10%</strong></li>
     </ul>
-    <h3 class="keter p-2">Keter</h3>
+    <h3 class="keter p-2">Keter (Hard)</h3>
     <ul class="text-white">
       <li>Uložení <strong>pouze při vypínání hry</strong> (Save & Quit)</li>
       <li>Rychlost SCP-173, SCP-106, SCP-049, SCP-096, SCP-939 a MTF se <strong>zvýší o 20%</strong></li>
       <li>Větší šance naražení na SCP-173, SCP-106, SCP-049 a SCP-096</li>
     </ul>
+      </div>
+      <div class="col-md-4 my-auto">
+        <img class="" src="../images/difficulty.png" alt="Nastavení obtížnosti">
+      </div>
+    </div>
   </main>
   <footer class="container-fluid bg-custom1 p-3 mt-5">
     <div class="row">
