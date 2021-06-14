@@ -18,7 +18,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-sm bg-custom1 navbar-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img src="../images/navbar_logo.png" alt="SCP Logo" height="50" />
       </a>
 
@@ -37,8 +37,17 @@
           <li class="nav-item">
             <a class="nav-link docasne1" href="../mechaniky_hry/gameplay.html">Mechaniky hry</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-custom1 docasne1" href="#">Místnosti</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-custom1 docasne1" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Místnosti
+            </a>
+            <div class="dropdown-menu ndm" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item ndi" href="#">Místnosti na mapě</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item ndi" href="../mapa/mistnosti.html#lcz">Light Containment Zone</a>
+              <a class="dropdown-item ndi" href="../mapa/mistnosti.html#hcz">Heavy Containment Zone</a>
+              <a class="dropdown-item ndi" href="../mapa/mistnosti.html#ez">Entrance Zone</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link docasne1" href="../lore/pribeh.html">Příběh</a>
@@ -101,7 +110,7 @@
         </div>
       </div>
     </div>
-    <h2 class="text-white p-3 border-top">Light Containment Zone (LCZ)</h2>
+    <h2 id="lcz" class="text-white p-3 border-top">Light Containment Zone (LCZ)</h2>
     <p class="text-white p-1">LCZ je první zóna se kterou se setkáte ve hře. Po ni následuje HCZ a EZ. LCZ je hlavně
       používána na zadržení a uskladnění lehce zadržitelných SCP jako Euclid a Safe např. SCP-173 a SCP-914.</p>
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -322,7 +331,7 @@
         </div>
       </div>
     </div>
-    <h2 class="text-white p-3 border-top">Heavy Containment Zone (HCZ)</h2>
+    <h2 id="hcz" class="text-white p-3 border-top">Heavy Containment Zone (HCZ)</h2>
     <p class="text-white p-1">HCZ je druhá zóna se kterou se setkáte ve hře. Je používána k zadržení horších SCP jako
       SCP-106 a SCP-049. Kvůli tohodle najdete často v zóně dekontaminační plyn.</p>
     <h3 class="text-white p-2">Tunely Údržby</h3>
@@ -418,7 +427,7 @@
         <img class="img-fluid border" src="../images/106control.png" alt="Ovládací panel v 106">
       </div>
     </div>
-    <h2 class="border-top mt-3 text-white p-3">Entrance Zone (EZ)</h2>
+    <h2 id="ez" class="border-top mt-3 text-white p-3">Entrance Zone (EZ)</h2>
     <p class="text-white p-1">Entrance Zone (původně nazývaná Office Zone) je
       poslední zónou, se kterou se ve hře setkáváte. Předchází mu LCZ a HCZ. Je
       věnována výzkumní a administrativní divizi a vyznačuje se čistým, sterilním prostředím zdobeným bílými
@@ -477,15 +486,22 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
+    var jumpscare = 0;
     function ani(){
-      document.getElementById('scp173').className += ' jumpscareimg';
+      if(jumpscare == 0){
+        jumpscare = 1; 
+       document.getElementById('scp173').className += ' jumpscareimg';
       document.getElementById("scp173").style.zIndex = "9999999999999999999999999";
       var audio = new Audio('../video_audio/Horror2.ogg');
       audio.play();
       setTimeout(function() {
-        document.getElementById('scp173').className -= ' jumpscareimg';
       document.getElementById("scp173").style.zIndex = "-1";
       },10000)
+      }
+      else{
+        var audio = new Audio('../video_audio/buttondenied.ogg');
+        audio.play();
+      }
     }
   </script>
 </body>

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-image: url("../images/background.png");
     background-size: cover;
@@ -49,4 +52,10 @@ a.footerodkazy:hover{
 
 .docasne1:active{
     color: red!important;
+}
+.ndm{
+    background-color: #141414;
+}
+.ndi{
+    color: white;
 }
