@@ -11,6 +11,13 @@ a.link{
 a.link:hover{
     color: aqua!important;
 }
+a.jumplink{
+    color: rgb(202, 0, 0)!important;
+}
+a.jumplink:hover{
+    color: red!important;
+    text-decoration: underline red!important;
+}
 .scp{
     position: fixed;
     margin-left: 10%;
