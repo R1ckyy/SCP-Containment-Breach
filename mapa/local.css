@@ -11,3 +11,39 @@ a.link{
 a.link:hover{
     color: aqua!important;
 }
+.scp{
+    position: fixed;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0;
+    height: 100%;
+}
+#scp173{
+    z-index: -5;
+}
+
+.jumpscareimg{
+    animation: jumpscare 10s forwards;
+}
+
+@keyframes jumpscare{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .scp{
+        height: 50%;
+        margin-top: 350px;
+    }
+}

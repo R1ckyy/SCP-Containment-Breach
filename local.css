@@ -1,0 +1,6 @@
+a.link{
+    color: rgb(0, 202, 202)!important;
+}
+a.link:hover{
+    color: aqua!important;
+}

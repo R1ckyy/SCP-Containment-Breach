@@ -48,6 +48,7 @@
     </nav>
   </header>
   <main class="container">
+        <img class="scp" id="scp173" src="../images/scp_173.png" alt="Jumpscare. ur not suposed to see this">
     <h1 class="m-5 text-center text-white">Místnosti na mapě</h1>
     <div class="m-5"></div>
     <p class="text-white text-center p-2 lead">
@@ -56,7 +57,7 @@
     </p>
     <p class="text-white text-center p-2 lead">
       Tato mapa se dělí na tři hlavní zóny: Light Containment Zone, Heavy Containment Zone, Entrance Zone. Potom dále na
-      Pocket Dimension a Surface (Sepsal jsem zde jenom ty zajímavé)
+      Pocket Dimension a Surface
     </p>
     <div class="m-5"></div>
     <h2 class="text-white p-3">Checkpointy</h2>
@@ -103,6 +104,12 @@
     <h2 class="text-white p-3 border-top">Light Containment Zone (LCZ)</h2>
     <p class="text-white p-1">LCZ je první zóna se kterou se setkáte ve hře. Po ni následuje HCZ a EZ. LCZ je hlavně
       používána na zadržení a uskladnění lehce zadržitelných SCP jako Euclid a Safe např. SCP-173 a SCP-914.</p>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        Prosím berte na vědomí že <strong>místností ve hře je o mnohem více</strong>. Sepsal jsem zde jenom ty zajímavé
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     <h3 class="text-white p-2">Cely pro personál Třídy D</h3>
     <div class="row">
       <div class="col-md-8">
@@ -186,6 +193,7 @@
           těžké dveře. Na opačné straně chodby jsou dva samostatné vchody, které vedou do velkého skladovacího prostoru
           s plynovou maskou, dokumentem SCP-1048, hlášení o incidentu SCP-1048-A, karta úrovně 1, schránka a až tři 9V
           baterie. Vlevo od středových dveří je připevněna ke stropu bezpečnostní kamera.</p>
+        <p class="text-white p-1">Hráč si musí dát pozor, protože se v místnosti <a class="link" onclick="ani()">objeví SCP-173</a>.</p>
       </div>
       <div class="col-md-4">
         <div id="carouselSklad" class="carousel slide border" data-ride="carousel">
@@ -469,10 +477,15 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
-    function delay(URL) {
-      setTimeout(function () {
-        window.location = URL;
-      }, 700);
+    function ani(){
+      document.getElementById('scp173').className += ' jumpscareimg';
+      document.getElementById("scp173").style.zIndex = "9999999999999999999999999";
+      var audio = new Audio('../video_audio/Horror2.ogg');
+      audio.play();
+      setTimeout(function() {
+        document.getElementById('scp173').className -= ' jumpscareimg';
+      document.getElementById("scp173").style.zIndex = "-1";
+      },10000)
     }
   </script>
 </body>
