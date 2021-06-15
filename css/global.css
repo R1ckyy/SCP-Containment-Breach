@@ -48,6 +48,12 @@ a.footerodkazy{
 a.footerodkazy:hover{
     color: aqua!important;
 }
+a.footerodkazygolden{
+    color: rgb(202, 114, 0)!important;
+}
+a.footerodkazygolden:hover{
+    color: rgb(255, 145, 0)!important;
+}
 /* Dočásné */
 
 .docasne1:active{
