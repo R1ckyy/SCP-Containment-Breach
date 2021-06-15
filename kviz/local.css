@@ -20,3 +20,9 @@ a.link:hover{
     text-align: center;
     font-size: larger;
 }
+input[type=checkbox][disabled]:checked{
+    outline:2px solid #0075FF;
+}
+input[type=radio][disabled]:checked{
+    outline:2px solid #0075FF;
+}

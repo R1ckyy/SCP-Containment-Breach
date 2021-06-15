@@ -115,7 +115,7 @@
       <p class="alert alert-success collapse multi-collapse mt-2" id="answer5">D-9341</p>
         <p class="otazka pt-1">6. Před kým se doporučuje se krčit?</p>
         <div class="col-md-12 mx-auto text-white text-center">
-          <div class="form-check form-check-inline">
+          <div class="form-check form-check-inline" id="scp">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">MTF</label>
           </div>
@@ -148,33 +148,33 @@
       <p class="otazka pt-1">7. Jakou úroveň karty potřebujete pro otevření nukleárního sila?</p>
       <div class="form-group row">
         <div class="col-md-8 text-white text-center mx-auto">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="members" id="rm" value="option1">
-            <label class="form-check-label" for="rm">
+          <div class="form-check form-check-inline" id="clir">
+            <input class="form-check-input" type="radio" name="clearance" id="1" value="option1">
+            <label class="form-check-label" for="1">
               1.
             </label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="members" id="jin" value="option2">
-            <label class="form-check-label" for="jin">
+            <input class="form-check-input" type="radio" name="clearance" id="2" value="option2">
+            <label class="form-check-label" for="2">
               2.
             </label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="members" id="suga" value="option3">
-            <label class="form-check-label" for="suga">
+            <input class="form-check-input" type="radio" name="clearance" id="3" value="option3">
+            <label class="form-check-label" for="3">
               3.
             </label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="members" id="j-hope" value="option4">
-            <label class="form-check-label" for="j-hope">
+            <input class="form-check-input" type="radio" name="clearance" id="4" value="option4">
+            <label class="form-check-label" for="4">
               4.
             </label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="members" id="jimin" value="option5">
-            <label class="form-check-label" for="jimin">
+            <input class="form-check-input" type="radio" name="clearance" id="5" value="option5">
+            <label class="form-check-label" for="5">
               5.
             </label>
           </div>
@@ -182,7 +182,7 @@
       </div>
       <p class="alert alert-success collapse multi-collapse mt-2" id="answer7">Úroveň 5</p>
       <div class="container text-center">
-        <button type="button" class="btn btn-dark mt-4" onclick="showanswers()" data-target=".multi-collapse"
+        <button id="button" type="button" class="btn btn-dark mt-4" onclick="showanswers()" data-target=".multi-collapse"
             aria-expanded="false"
             aria-controls="answer1 answer2 answer3 answer4 answer5 answer6 answer7">Ukaž Odpovědi</button>
     </div>
@@ -222,6 +222,24 @@
     function showanswers() {
       if(used == 0){
       used = 1;
+      document.getElementById("teslacooldown").disabled = true;
+      document.getElementById("maynard").disabled = true;
+      document.getElementById("designation").disabled = true;
+      document.getElementById("class").disabled = true;
+      document.getElementById("zony").disabled = true;
+      document.getElementById("inlineCheckbox1").disabled = true;
+      document.getElementById("inlineCheckbox2").disabled = true;
+      document.getElementById("inlineCheckbox3").disabled = true;
+      document.getElementById("inlineCheckbox4").disabled = true;
+      document.getElementById("inlineCheckbox5").disabled = true;
+      document.getElementById("inlineCheckbox6").disabled = true;
+      document.getElementById("inlineCheckbox7").disabled = true;
+      document.getElementById("1").disabled = true;
+      document.getElementById("2").disabled = true;
+      document.getElementById("3").disabled = true;
+      document.getElementById("4").disabled = true;
+      document.getElementById("5").disabled = true;
+      document.getElementById("button").disabled = true;
       var audio = new Audio("../video_audio/odpoved.ogg")
       audio.play();
       setTimeout( function() {
