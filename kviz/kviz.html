@@ -223,10 +223,14 @@
       if(used == 0){
       used = 1;
       var audio = new Audio("../video_audio/odpoved.ogg")
-      audio.play()
+      audio.play();
       setTimeout( function() {
        $('.collapse').collapse()
       },1500)
+      }
+      else{
+        var audio = new Audio("../video_audio/buttondenied.ogg")
+        audio.play();
       }
 
 
