@@ -38,7 +38,8 @@
             <a class="nav-link docasne1" href="../mechaniky_hry/gameplay.html">Mechaniky hry</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle docasne1" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle docasne1" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Místnosti
             </a>
             <div class="dropdown-menu ndm" aria-labelledby="navbarDropdownMenuLink">
@@ -60,6 +61,132 @@
     </nav>
   </header>
   <main class="container">
+    <h1 class="m-5 text-center text-white">Kvíz</h1>
+    <div class="m-5"></div>
+    <form>
+      <p class="otazka pt-1">1. Kolik sekund trvá Tesla Gate než vychladne?</p>
+      <div class="form-group row">
+        <div class="col-md-3 mx-auto">
+          <input type="text" class="form-control" name="teslacooldown" id="teslacooldown" placeholder="Sekundy">
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer1">0.5 sekund</p>
+      <p class="otazka pt-1">2. Pro jakou společnost pracoval Dr. Maynard?</p>
+      <div class="form-group row">
+        <div class="col-md-3 mx-auto">
+          <select class="form-control" name="maynard" id="maynard">
+            <option>Vyber si možnost</option>
+            <option>SCP Nadace</option>
+            <option>Erik Corporated</option>
+            <option>Chaos Insurgency</option>
+            <option>Nestlé</option>
+          </select>
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer2">Erik Cor... eh Chaos Insurgency</p>
+      <p class="otazka pt-1">3. Kolik je celkem zón v tomto zařízení?</p>
+      <div class="form-group row">
+        <div class="col-md-3 mx-auto">
+          <input type="number" class="form-control" name="zony" id="zony" min="0" max="10" placeholder="Počet zón">
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer3">3 (LCZ, HCZ, EZ)</p>
+      <p class="otazka pt-1">4. Jaká Třída personálu je pro nadaci nejdůležitější?</p>
+      <div class="form-group row">
+        <div class="col-md-3 mx-auto">
+          <select class="form-control" name="class" id="class">
+            <option>Vyber si možnost</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+          </select>
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer4">A (Patří tam totiž členové rady O5)</p>
+      <p class="otazka pt-1">5. Jakou má naše postava označení?</p>
+      <div class="form-group row">
+        <div class="col-md-3 mx-auto">
+          <input type="number" class="form-control" name="designation" id="designation" min="0" max="9999"
+            placeholder="D-????">
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer5">D-9341</p>
+        <p class="otazka pt-1">6. Před kým se doporučuje se krčit?</p>
+        <div class="col-md-12 mx-auto text-white text-center">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">MTF</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">SCP-999</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">SCP-106</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+            <label class="form-check-label" for="inlineCheckbox4">SCP-173</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+            <label class="form-check-label" for="inlineCheckbox5">SCP-939</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+            <label class="form-check-label" for="inlineCheckbox6">SCP-513</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+            <label class="form-check-label" for="inlineCheckbox7">SCP-066</label>
+          </div>
+        </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer6">MTF, SCP-939</p>
+      <p class="otazka pt-1">7. Jakou úroveň karty potřebujete pro otevření nukleárního sila?</p>
+      <div class="form-group row">
+        <div class="col-md-8 text-white text-center mx-auto">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="members" id="rm" value="option1">
+            <label class="form-check-label" for="rm">
+              1.
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="members" id="jin" value="option2">
+            <label class="form-check-label" for="jin">
+              2.
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="members" id="suga" value="option3">
+            <label class="form-check-label" for="suga">
+              3.
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="members" id="j-hope" value="option4">
+            <label class="form-check-label" for="j-hope">
+              4.
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="members" id="jimin" value="option5">
+            <label class="form-check-label" for="jimin">
+              5.
+            </label>
+          </div>
+        </div>
+      </div>
+      <p class="alert alert-success collapse multi-collapse mt-2" id="answer7">Úroveň 5</p>
+      <div class="container text-center">
+        <button type="button" class="btn btn-dark mt-4" onclick="showanswers()" data-target=".multi-collapse"
+            aria-expanded="false"
+            aria-controls="answer1 answer2 answer3 answer4 answer5 answer6 answer7">Ukaž Odpovědi</button>
+    </div>
+    </form>
   </main>
   <footer class="container-fluid bg-custom1 p-3 mt-5">
     <div class="row">
@@ -91,10 +218,18 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
-    function delay(URL) {
-      setTimeout(function () {
-        window.location = URL;
-      }, 700);
+    var used = 0;
+    function showanswers() {
+      if(used == 0){
+      used = 1;
+      var audio = new Audio("../video_audio/odpoved.ogg")
+      audio.play()
+      setTimeout( function() {
+       $('.collapse').collapse()
+      },1500)
+      }
+
+
     }
   </script>
 </body>

@@ -11,3 +11,12 @@ a.link{
 a.link:hover{
     color: aqua!important;
 }
+.otazka{
+    border: #141414 solid;
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
